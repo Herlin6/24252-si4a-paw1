@@ -3,11 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Belajar HTML</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      /* elemen selector */
+      body {
+        background-color: #b7b1f2;
+      }
+      p {
+        color: #fbf3b9;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #f1bfa8;
+      }
+      /* class selector */
+      .bg-warning {
+        background-color: yellow;
+      }
+      .text-success {
+        color: rgb(0, 255, 0);
+      }
+      /* id selector */
+      #h5 {
+        color: rgb(100, 100, 255);
+      }
+    </style>
   </head>
   <body>
-    <h1>Selamat Datang</h1>
+    <h1
+      style="
+        color: white;
+        text-align: center;
+        -webkit-text-stroke: 1px black;
+        background-color: #fdb7ea;
+      "
+    >
+      Selamat Datang
+    </h1>
     <p>
       (17/02/25) - Hari ini belajar VCS Git dan Github, serta deploy ke velcel
     </p>
@@ -17,8 +51,8 @@
     <h1>Judul</h1>
     <h2>Judul</h2>
     <h3>Judul</h3>
-    <h4>Judul</h4>
-    <h5>Judul</h5>
+    <h4 class="bg-warning text-success">Judul</h4>
+    <h5 id="h5">Judul</h5>
     <h6>Judul</h6>
 
     <!-- Order List -->

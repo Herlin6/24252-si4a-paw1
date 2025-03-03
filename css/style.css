@@ -1,0 +1,50 @@
+* {
+  font-family: cursive;
+}
+td,
+th {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+a {
+  text-decoration: none;
+  color: #ffdccc;
+}
+a:hover {
+  color: rgb(38, 42, 254);
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+}
+
+.rounded {
+  border-radius: 30px;
+}
+
+/* Element selector */
+body {
+  background-color: #b7b1f2;
+  height: 3000px;
+}
+p {
+  color: #fbf3b9;
+}
+h1,
+h2,
+h3 {
+  color: #f1bfa8;
+}
+/* class selector */
+.bg-warning {
+  background-color: yellow;
+}
+.text-success {
+  color: rgb(0, 255, 0);
+}
+/* id selector */
+#h5 {
+  color: rgb(100, 100, 255);
+}

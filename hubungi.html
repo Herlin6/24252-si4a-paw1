@@ -4,8 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <style>
+      * {
+        /* box-sizing: border-box; */
+      }
+      .rounded {
+        border-radius: 30px;
+      }
+      body {
+        background-image: linear-gradient(#b7b1f2, #fdb7ea, #ffdccc, #fbf3b9);
+        font-family: monospace;
+      }
+      h1 {
+        font-family: cursive;
+        color: white;
+        -webkit-text-stroke: 1px black;
+        text-align: center;
+      }
+      input[type="text"],
+      input[type="date"],
+      select,
+      textarea {
+        width: 180px;
+        height: 25px;
+        border-radius: 10px;
+        border: 1px solid rgb(17, 9, 255);
+        padding: 5px;
+        margin-top: 3px;
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+
+      select {
+        height: 35px;
+      }
+      button {
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: rgb(125, 233, 247);
+        color: white;
+        border: 0.5px solid rgb(125, 233, 247);
+        margin-top: 10px;
+      }
+      input[type="text"],
+      input[type="date"],
+      select,
+      textarea,
+      button,
+      iframe {
+        box-shadow: 3px 3px 9px rgb(0, 0, 0);
+      }
+
+      section {
+        width: fit-content;
+        padding: 20px 80px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.2);
+        /* padding: 20px; */
+        margin-top: 50px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 9px rgb(0, 0, 0);
+      }
+    </style>
   </head>
   <body>
-    <h1>hubungi kami ges</h1>
+    <section>
+      <h1>Hubungi Kami</h1>
+      <form action="proses.php" method="post">
+        <p />
+        Nama Lengkap <br />
+        <input
+          type="text"
+          name="nama"
+          id="nama"
+          placeholder="Masukkan Nama Lengkap"
+          required
+        />
+        <p />
+        Tanggal Lahir <br />
+        <input type="date" name="tanggalLahir" id="tanggalLahir" />
+        <p />
+        Jenis Kelamin <br />
+        <input type="radio" name="jk" id="jkl" value="L" checked /> Laki-laki
+        <br />
+        <input type="radio" name="jk" id="jkp" value="P" /> Perempuan
+        <p />
+        Tempat Lahir <br />
+        <select name="tempatlahir" id="tempatlahir">
+          <option value="PLG">Palembang</option>
+          <option value="JKT">Jakarta</option>
+          <option value="BKS">Bekasi</option>
+          <option value="MDN">Medan</option>
+          <option value="MKS">Makasar</option>
+        </select>
+        <p />
+        Pesan <br />
+        <textarea
+          name="alamat"
+          id="alamat"
+          placeholder="Masukkan Pesan Anda"
+        ></textarea>
+        <p />
+        <button type="submit">Submit</button>
+      </form>
+      <iframe
+        class="rounded"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.4457928510733!2d104.76404219999999!3d-2.9737135999999933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b766d8211462f%3A0xcc95d97476bf2dd8!2sUniversitas%20Multi%20Data%20Palembang!5e0!3m2!1sid!2sid!4v1740985441365!5m2!1sid!2sid"
+        width="300px"
+        height="150px"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
   </body>
 </html>
