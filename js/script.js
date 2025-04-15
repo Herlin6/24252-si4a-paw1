@@ -1,4 +1,4 @@
-// document.getElementsByTagName("body")[0].style.backgroundColor = "Yellow";
+document.getElementsByTagName("body")[0].style.backgroundColor = "gray";
 
 const btn2 = document.getElementById("btn2");
 btn2.onclick = () => {
