@@ -18,6 +18,10 @@ function simpan() {
   //clear isi elemen daftar tamu
   daftarTamu.innerHTML = "";
 
+  document.getElementById("nama").value = "";
+  document.getElementById("keperluan").value = "Membaca";
+  document.getElementById("jk").value = "Laki-laki";
+
   tampil();
 }
 
