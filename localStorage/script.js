@@ -7,6 +7,12 @@ function simpan() {
   let nama = document.getElementById("nama").value;
   let keperluan = document.getElementById("keperluan").value;
   let jk = document.getElementById("jk").value;
+
+  if (nama.trim() === "") {
+    alert("Nama tidak boleh kosong!!");
+    return;
+  }
+
   if (localStorage.getItem("ls_bukutamu") == null) {
     data = [];
   } else {
